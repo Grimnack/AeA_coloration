@@ -39,7 +39,6 @@ def moyenne50(n,p,algo) :
         elif algo == 2 :
             start_time = time.time()
             graph.algoWelshPowel()
-        graph.algoNaif()
         interval = time.time() - start_time
         temps.append(interval)
         couleurs.append(graph.totalColor())
@@ -75,7 +74,8 @@ def plotTemps() :
     plt.legend()
     plt.show()
 
-plotTemps()
+# plotTemps()
+plotColor()
 # print(moyenne50(50,0.5,0))
 # print(moyenne50(50,0.5,1))
 # print(moyenne50(50,0.5,2))
